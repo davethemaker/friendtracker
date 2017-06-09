@@ -4,8 +4,16 @@ const favicon				= require('serve-favicon');
 const logger 				= require('morgan');
 const cookieParser 			= require('cookie-parser');
 const bodyParser 			= require('body-parser');
+const mongoose 				= require('mongoose');
 
 const index 				= require('./routes/index');
+
+require('dotenv').config();
+
+mongoose.Promise  			= global.Promise;
+mongoose.connect(process.env.PROD_MONGODB)
+		.then(() => {console.log("mongodb connection successful")})
+		.catch((err) => console.error(err)); 
 
 
 var app 					= express();
