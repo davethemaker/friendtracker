@@ -7,6 +7,7 @@ const bodyParser 			= require('body-parser');
 const mongoose 				= require('mongoose');
 
 const index 				= require('./routes/index');
+const friends       = require('./routes/friends');
 
 require('dotenv').config();
 
@@ -30,6 +31,8 @@ app.use(express.static(path.join(__dirname,'public')));
 
 // express Router : see https://expressjs.com/en/guide/routing.html
 app.use('/', index);
+app.use('/friends', friends);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
