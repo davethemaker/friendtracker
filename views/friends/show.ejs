@@ -9,5 +9,9 @@
 	<p><%= friend.name %>
 
 	<h3><a href="/friends/edit/<%= friend._id %>">edit</a></h3>
+
+	<form action="/friends/delete/<%= friend._id %>" method="post">
+	<button type="submit">delete</button>
+	</form>
 </body>
 </html>
