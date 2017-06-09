@@ -61,14 +61,14 @@ friendController.update = function(req,res){
 		email: req.body.email,
 		address: req.body.address
 	}},
-	{ new: true},
+	{ new: true },
 	function(err,friend){
 		if(err){
 			console.log(err);
-			res.render('../views/friends/edit', {friend:req.body});
+			res.render('../views/friends/edit', {friend: req.body});
 		}
 		else{
-			res.redirect('/friends/show'+friend._id);
+			res.redirect('/friends/show/'+friend._id);
 		}
 	});
 };
