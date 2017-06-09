@@ -18,7 +18,7 @@ friendController.create = function(req,res){
 	res.render('../views/friends/create');
 };
 
-friendController.save(function(req,res){
+friendController.save =function(req,res){
 	const friend = new Friend(req.body);
 
 	friend.save(function(err){
@@ -31,6 +31,6 @@ friendController.save(function(req,res){
 			res.redirect('/friends/show/' + friend._id);
 		}
 	});
-});
+};
 
 module.exports = friendController;
