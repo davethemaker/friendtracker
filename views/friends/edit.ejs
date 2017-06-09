@@ -4,6 +4,8 @@
   <% include ../partials/head %>
 </head>
 <body class="container">
+    <% include ../partials/header %>
+
 	<h3>edit</h3>
 	<form action="/friends/update/<%= friend._id %>" method="post">
 	<input type="text" name="name" value="<%= friend.name %> " />

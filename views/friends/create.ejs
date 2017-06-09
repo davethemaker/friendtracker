@@ -4,7 +4,10 @@
   <% include ../partials/head %>
 </head>
 <body class="container">
+  <% include ../partials/header %>
+
   <h3>Create new friend</h3>
+
   <form action="/friends/save" method="post">
   <input type="text" name="name" placeholder="name" />
   <input type="text" name="email" placeholder="email" />
