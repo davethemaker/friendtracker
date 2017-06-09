@@ -14,6 +14,17 @@ friendController.list = function(req,res){
 	});
 };
 
+friendController.show = function(req,res){
+	Friend.findOne({_id: req.params.id}).exec(function(err,friend){
+		if(err){
+			console.log("oops!", err);
+		}
+		else{
+			res.render('../views/friends/show',{friend,friend});
+		}
+	});
+}
+
 friendController.create = function(req,res){
 	res.render('../views/friends/create');
 };
