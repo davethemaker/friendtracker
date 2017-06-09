@@ -14,4 +14,8 @@ friendController.list = function(req,res){
 	});
 };
 
+friendController.create = function(req,res){
+	res.render('../views/friends/create');
+};
+
 module.exports = friendController;
