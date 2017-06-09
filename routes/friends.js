@@ -17,6 +17,10 @@ router.get('/create', function(req,res){
 	friend.create(req,res);
 });
 
+router.post('/update/:id', function(req,res){
+	friend.update(req,res);
+});
+
 router.post('/save', function(req,res){
 	friend.save(req,res);
 });
