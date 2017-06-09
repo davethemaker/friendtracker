@@ -1,5 +1,5 @@
 # friend tracker
-## June 8, 20 7
+## June 8-9, 2017
 [David Eliason](http://www.deliason.com)
 
 [Live Site](https://myfriendtracker.herokuapp.com/)
