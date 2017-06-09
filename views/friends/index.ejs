@@ -6,20 +6,25 @@
 </head>
 <body class="container">
   <% include ../partials/header %>
-  
-  <h3>Friend List:</h3>
-  <a href="/friends">All Friends</a>
-  <% if(friends.length === 0){ %>
-     <p>Feeling pretty lonely!</p>
-  <% } %>
-  <a href="/">Home</a>
-  <ul>
-    <% for(var i = 0; i < friends.length; i++){ %>
-    <li> <span class="nameStyle"><%= friends[i].name %> </span>
-         <%= friends[i].email %>
-         <span class="addressStyle"><%= friends[i].address %></span>
-    </li>
-    <% } %>
-  </ul>
+  <div class="row">
+    <div class="col-xs-4"></div>
+      <div class="col-xs-4">
+        <h3>Friend List:</h3>
+        <a href="/friends">All Friends</a>
+        <% if(friends.length === 0){ %>
+           <p>Feeling pretty lonely!</p>
+        <% } %>
+        <a href="/">Home</a>
+        <ul>
+          <% for(var i = 0; i < friends.length; i++){ %>
+          <li> <span class="nameStyle"><%= friends[i].name %> </span>
+               <%= friends[i].email %>
+               <span class="addressStyle"><%= friends[i].address %></span>
+          </li>
+          <% } %>
+        </ul>
+      </div>
+      <div class="col-xs-4"></div>
+    </div>
 </body>
 </html>

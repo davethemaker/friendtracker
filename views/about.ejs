@@ -7,16 +7,23 @@
   <body class="container">
     <% include ./partials/header %>
 
-    <h1><%= title %></h1>
-    <p>Friend Tracker is an app built to help keep track of friend's information</p>
-    <p>It uses a Javascript environment:</p>
-    <ul>
-      <li><span class="nameStyle">express:</span> to create a server</li>
-      <li><span class="nameStyle">node:</span> to add expanded functionality through modules</li>
-      <li><span class="nameStyle">ejs:</span> to provide view templating</li>
-      <li><span class="nameStyle">mongodb:</span> to provide persistence of data</li>
-      <li><span class="nameStyle">mongoose:</span> to facilitate with data storage and retrieval using Schemas</li>
-    </ul>
+    <div class="row">
+      <div class="col-xs-4"></div>
+      <div class="col-xs-4">
+
+        <h1><%= title %></h1>
+        <p>Friend Tracker is an app built to help keep track of friend's information</p>
+        <p>It uses a Javascript environment:</p>
+        <ul>
+          <li><span class="nameStyle">express:</span> to create a server</li>
+          <li><span class="nameStyle">node:</span> to add expanded functionality through modules</li>
+          <li><span class="nameStyle">ejs:</span> to provide view templating</li>
+          <li><span class="nameStyle">mongodb:</span> to provide persistence of data</li>
+          <li><span class="nameStyle">mongoose:</span> to facilitate with data storage and retrieval using Schemas</li>
+        </ul>
+      </div> 
+      <div class="col-xs-4"></div>
+    </div>
     <% include ./partials/footer %>
     
   </body>

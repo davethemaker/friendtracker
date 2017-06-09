@@ -5,13 +5,18 @@
 </head>
 <body class="container">
     <% include ../partials/header %>
-
-	<h3>edit</h3>
-	<form action="/friends/update/<%= friend._id %>" method="post">
-	<input type="text" name="name" value="<%= friend.name %> " />
-	<input type="text" name="email" value="<%= friend.email %>" />
-	<input type="text" name="address" value="<%= friend.address %>" />
-	<button type="submit">update</button>
-	</form>
+    <div class="row">
+      <div class="col-xs-4"></div>
+      <div class="col-xs-4">
+		<h3>edit</h3>
+		<form action="/friends/update/<%= friend._id %>" method="post">
+		<input type="text" name="name" value="<%= friend.name %> " />
+		<input type="text" name="email" value="<%= friend.email %>" />
+		<input type="text" name="address" value="<%= friend.address %>" />
+		<button type="submit">update</button>
+		</form>
+	  </div>
+      <div class="col-xs-4"></div>
+    </div>
 </body>
 </html>
