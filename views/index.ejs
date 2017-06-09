@@ -6,13 +6,17 @@
   </head>
   <body class="container">
     <% include ./partials/header %>
-
-    <h1><%= title %></h1>
-    <p>Welcome to Friend Tracker!<p>
-    <ul>
-      <li><a href="/friends">view friends</a></li>
-      <li><a href="/friends/create">add a friend</a></li>
-    </ul>
+    <div class="row">
+      <div class="col-xs-4"></div>
+      <div class="col-xs-4">
+        <h1><%= title %></h1>
+        <p>Welcome to Friend Tracker!<p>
+        <ul>
+          <li><a href="/friends">view friends</a></li>
+          <li><a href="/friends/create">add a friend</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-4"></div>
     <% include ./partials/footer %>
   </body>
 </html>
