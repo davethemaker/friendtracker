@@ -1,10 +1,11 @@
 # friend tracker
 ## June 8-9, 2017
-Made By: [David Eliason](http://www.deliason.com). He has a [blog](http://www.davethemaker.com) too.
+Made by: [David Eliason](http://www.deliason.com). He has a [blog](http://www.davethemaker.com) too.
 
-[Live Site](https://myfriendtracker.herokuapp.com/)
+You can visit the [Live Site](https://myfriendtracker.herokuapp.com/)
 
-Description:
+### Description:
+
 This is an app to help keep track of friend's information. It uses **express** to spin up a server, **ejs** as a templating engine, **node** to provide functionality through various modules, **mongodb** for data persistence, and **mongoose** to assist with working with the db in terms of models.
 
 *This app works to adopt MVC principles by seperating out the models, views, and controllers. The modular approach is also seen through the use of creating node modules where possible and dependency injection.*
