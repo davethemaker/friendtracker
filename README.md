@@ -6,11 +6,11 @@ You can visit the [Live Site](https://myfriendtracker.herokuapp.com/)
 
 ### Description:
 
-This is an app to help keep track of friend's information. It uses **express** to spin up a server, **ejs** as a templating engine, **node** to provide functionality through various modules, **mongodb** for data persistence, and **mongoose** to assist with working with the db in terms of models.
+This is an app to help keep track of friend's information. It uses **express** to spin up a server, **ejs** as a templating engine, **node** to provide functionality through various modules, **mongodb** for data persistence, and **mongoose** to assist with working with the db in terms of models and Schemas.
 
 *This app works to adopt MVC principles by seperating out the models, views, and controllers. The modular approach is also seen through the use of creating node modules where possible and dependency injection.*
 
-#### Nerd Alert!
+#### Nerd Kicks and Giggles:
 *To Explore Locally and not use cloud-hosted db:*
 
 1. Clone the repo
