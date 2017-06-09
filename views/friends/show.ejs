@@ -6,9 +6,10 @@
 <body class="container">
     <a href="/">home</a>
     <a href="/friends">friends</a>
-	<p><%= friend.name %>
+    <h5>Your new friend!</h5>
+	<h2><%= friend.name %></h2>
 
-	<h3><a href="/friends/edit/<%= friend._id %>">edit</a></h3>
+	<a href="/friends/edit/<%= friend._id %>"><button class="btn btn-danger">edit</button></a>
 
 	<form action="/friends/delete/<%= friend._id %>" method="post">
 	  <button class="btn btn-warning"type="submit"> delete</button>
