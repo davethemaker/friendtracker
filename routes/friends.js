@@ -20,5 +20,9 @@ router.get('/create', function(req,res){
 router.post('/save', function(req,res){
 	friend.save(req,res);
 });
+
+router.get('/edit/:id', function(req,res){
+	friend.edit(req,res);
+});
 // export module
 module.exports = router;
