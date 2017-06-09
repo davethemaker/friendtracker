@@ -73,4 +73,16 @@ friendController.update = function(req,res){
 	});
 };
 
+friendController.delete = function(req,res){
+	Friend.remove({_id: req.params.id}, function(err){
+		if(err){
+			console.log(err);
+		}
+		else{
+			console.log("Friend deleted");
+			res.redirect("/friends");
+		}
+	});
+};
+
 module.exports = friendController;
