@@ -55,4 +55,22 @@ friendController.edit = function(req,res){
 	});
 };
 
+friendController.update = function(req,res){
+	Friend.findByIdAndUpdate(req.params.id, { $set: {
+		name: req.body.name,
+		email: req.body.email,
+		address: req.body.address
+	}},
+	{ new: true},
+	function(err,friend){
+		if(err){
+			console.log(err);
+			res.render('../views/friends/edit', {friend:req.body});
+		}
+		else{
+			res.redirect('/friends/show'+friend._id);
+		}
+	});
+};
+
 module.exports = friendController;
