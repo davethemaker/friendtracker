@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
- 
+   <link rel="stylsheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
-<body>
+<body class="container">
     <a href="/">home</a>
     <a href="/friends">friends</a>
 	<p><%= friend.name %>
@@ -11,7 +11,7 @@
 	<h3><a href="/friends/edit/<%= friend._id %>">edit</a></h3>
 
 	<form action="/friends/delete/<%= friend._id %>" method="post">
-	<button type="submit">delete</button>
+	  <button class="btn btn-warning"type="submit"> delete</button>
 	</form>
 </body>
 </html>
