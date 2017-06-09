@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Friend = mongoose.model("Friend");
+const Friend = require("../models/Friend");
 
 const friendController = {};
 

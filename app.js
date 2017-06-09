@@ -5,17 +5,15 @@ const logger 				= require('morgan');
 const cookieParser 			= require('cookie-parser');
 const bodyParser 			= require('body-parser');
 const mongoose 				= require('mongoose');
-
-const index 				= require('./routes/index');
-const friends       = require('./routes/friends');
-
 require('dotenv').config();
 
-mongoose.Promise  			= global.Promise;
+mongoose.Promise        = global.Promise;
 mongoose.connect(process.env.PROD_MONGODB)
-		.then(() => {console.log("mongodb connection successful")})
-		.catch((err) => console.error(err)); 
-
+    .then(() => {console.log("mongodb connection successful")})
+    .catch((err) => console.error(err)); 
+    
+const index 				= require('./routes/index');
+const friends       = require('./routes/friends');
 
 var app 					= express();
 // set engines
