@@ -6,6 +6,14 @@
 <body>
   
   <h3>Friend List:</h3>
+  <% if(friends.length === 0){ %>
+     <p>Feeling pretty lonely!</p>
+  <% } %>
   <a href="/">Home</a>
+  <ul>
+    <% for(var i = 0; i < friends.length; i++){ %>
+    <li> <%= friends[i].name %> </li>
+    <% } %>
+  </ul>
 </body>
 </html>
