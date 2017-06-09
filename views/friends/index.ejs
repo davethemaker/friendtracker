@@ -14,7 +14,10 @@
   <a href="/">Home</a>
   <ul>
     <% for(var i = 0; i < friends.length; i++){ %>
-    <li> <%= friends[i].name %> </li>
+    <li> <span class="nameStyle"><%= friends[i].name %> </span>
+         <%= friends[i].email %>
+         <span class="addressStyle"><%= friends[i].address %></span>
+    </li>
     <% } %>
   </ul>
 </body>

@@ -1,3 +1,13 @@
 body {
 	background-color: #66a3ff;
 }
+
+.nameStyle {
+	color: white;
+	padding-right: 10px;
+}
+
+.addressStyle {
+	color: yellow;
+	padding-left: 10px;
+}
