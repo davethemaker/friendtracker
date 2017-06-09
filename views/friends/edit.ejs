@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+</head>
+<body class="container">
+	<h3>edit</h3>
+	<form action="/friends/update/<%= friend._id %>" method="post">
+	<input type="text" name="name" value="<%= friend.name %> " />
+	<input type="text" name="email" value="<%= friend.email %>" />
+	<input type="text" name="address" value="<%= friend.address %>" />
+	<button type="submit">update</button>
+	</form>
+</body>
+</html>
