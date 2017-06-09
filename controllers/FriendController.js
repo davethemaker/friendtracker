@@ -44,4 +44,15 @@ friendController.save =function(req,res){
 	});
 };
 
+friendController.edit = function(req,res){
+	Friend.findOne({_id: req.params.id}).exec(function(err,friend){
+		if(err){
+			console.log("oops", err);
+		}
+		else{
+			res.render('../views/friends/edit',{friend:friend});
+		}
+	});
+};
+
 module.exports = friendController;
