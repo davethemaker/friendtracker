@@ -20,6 +20,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname,'public')));
 
+// express Router : see https://expressjs.com/en/guide/routing.html
 app.use('/', index);
 
 // catch 404 and forward to error handler
