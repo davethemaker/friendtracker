@@ -10,11 +10,9 @@
     <div class="col-xs-4"></div>
       <div class="col-xs-4">
         <h3>Friend List:</h3>
-        <a href="/friends">All Friends</a>
         <% if(friends.length === 0){ %>
            <p>Feeling pretty lonely!</p>
         <% } %>
-        <a href="/">Home</a>
         <ul>
           <% for(var i = 0; i < friends.length; i++){ %>
           <li> <span class="nameStyle"><%= friends[i].name %> </span>
