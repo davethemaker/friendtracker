@@ -14,8 +14,8 @@ body {
 	padding-left: 10px;
 }
 
-.nav navbar-nav{
-	float:right;
+.nav navbar-nav li{
+	padding-left: 20px;
 }
 
 .footer {
@@ -29,4 +29,5 @@ body {
 
 .pangolin {
 	font-family: 'Pangolin', cursive;
+	padding-top: 15px;
 }
