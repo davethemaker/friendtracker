@@ -4,7 +4,7 @@
   "description": "track friend's data",
   "main": "index.js",
   "engines": {
-    "node": "6.9.2"
+    "node": "6.11.1"
   },
   "scripts": {
     "dev": "nodemon index.js",
