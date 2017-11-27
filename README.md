@@ -4,6 +4,8 @@ Made by: [David Eliason](http://www.deliason.com). He has a [blog](http://www.da
 
 You can visit the [Live Site](https://myfriendtracker.herokuapp.com/)
 
+[Return to Portfolio](https://davideliason.github.io/)
+
 ### Description:
 
 This is an app to help keep track of friend's information. It uses **express** to spin up a server, **ejs** as a templating engine, **node** to provide functionality through various modules, **mongodb** for data persistence, and **mongoose** to assist with working with the db in terms of models and Schemas.
@@ -23,6 +25,8 @@ This is an app to help keep track of friend's information. It uses **express** t
 5. open browser to localhost:8080
 
 ![Friend Tracker](./friend_tracker.png?raw=true "friend tracker")
+
+[Return to Portfolio](https://davideliason.github.io/)
 
 
 
