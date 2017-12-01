@@ -1,6 +1,6 @@
 # my friend tracker
 ## June 8-9, 2017
-Made by: [David Eliason](http://www.deliason.com). He has a [blog](http://www.davethemaker.com) too.
+Made by: [David Eliason](http://www.davethemaker.com).
 
 You can visit the [Live Site](https://myfriendtracker.herokuapp.com/)
 
